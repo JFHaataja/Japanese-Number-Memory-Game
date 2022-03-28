@@ -1,37 +1,22 @@
 body, html {
-    height: 100vh;
-    width: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-family: 'Kosugi Maru', sans-serif;
     font-size: 1.2rem;
 }
   
 .game-container{
     flex-grow: 1;
-    width: auto;
-    height: 100vh;
+    width: 100%;
 }
 
-body>div{
-    display: flex;
-  }
 
 .game-description{
-    margin-top:20px;
-    border: 10px;
-    height:50px;
-    display: flex;
-    border: 1px solid rgb(32, 32, 32);
-    border-radius: 4px;
-    padding: 10px;
-    
+    height: 3rem;
+    text-align: start;
 }
 
 
 .game-status{
-    padding: 20px 20px 20px 0px;
+    padding: 10px 10px 10px 0px;
 }
 
 .game-status :first-child{
@@ -49,18 +34,6 @@ body>div{
     transform:translate(6px,6px)
 }
 
-.game-panel{
-    display: flex;
-    align-content: stretch;
-    flex-wrap: wrap;
-    border: 10px;
-    height:650px;
-    width:800px;
-    padding: 10px;
-    border: 1px solid rgb(32, 32, 32);
-    border-radius: 5px;
-}
-
 .none{
     display:none;
 }
@@ -70,13 +43,14 @@ body>div{
     height: 150px;
     border: 1px solid rgb(32, 32, 32);
     border-radius: 5px;
-    margin: 3px 3px 3px 3px;
+    margin: 1px 1px 1px 1px;
     align-content: center;
     justify-content: center;
     text-align: center;
     text-justify:inter-ideograph;
     box-shadow: 1px 1px 0 rgba(0, 0, 0, .3);
     transform: scale(1);
+    padding: 3rem 1rem 1rem 1rem;
 }
 
 .cards:active {
@@ -93,16 +67,18 @@ body>div{
 
 /* japanese */
 .cards pre:nth-child(1){
-    font-size:30px; 
+    font-size: 1.8rem;
+
 }
 
 /* english */
 .cards pre:nth-child(2){
-    font-size: 15px;
+    font-size: 1rem;
+
 }
 
 .flip{
-    background-color:rgb(206, 164, 129);
+    background-color:rgb(255, 255, 255);
     backface-visibility: hidden;
 
 }
@@ -116,6 +92,7 @@ body>div{
     -moz-user-select: none; 
     -ms-user-select: none; 
     user-select: none;
+    color: black;
 }
 
 .matched {
@@ -140,7 +117,8 @@ body>div{
 }
 
 .congratulations{
- text-align: center;
+ text-align: left;
  height:100%;
- width:100%;   
+ width:100%;  
+ padding: 2rem; 
 }

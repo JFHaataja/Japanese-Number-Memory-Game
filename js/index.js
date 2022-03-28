@@ -13,7 +13,7 @@ startButton.addEventListener('click', () => changeButtonAndDescription() );
 
 function changeButtonAndDescription(){
 
-    startButton.innerHTML = "<span>Reset</span>";
+    startButton.innerHTML = "<span>Reset Game</span>";
     gameDescriptionPanel.classList.remove("none");
 
 prepareGame();
@@ -39,10 +39,10 @@ function organizeCards(cardIds){
     let divs = "";
   
     cardIds.forEach((item) => {
-      arrayOfCards.push(`<div class="cards cards-lower" data-nihongo="${japaneseList[item].id}">
-      <pre>${japaneseList[item].kanji}</pre><pre>${japaneseList[item].english}</pre></div>`);
-      arrayOfCards.push(`<div class="cards cards-lower" data-nihongo="${japaneseList[item].id}">
-      <pre>${japaneseList[item].hiragana}</pre><pre>${japaneseList[item].english}</pre></div>`);
+      arrayOfCards.push(`<div class="cards col-md-2 cards-lower" data-nihongo="${japaneseList[item].id}">
+      <div>${japaneseList[item].kanji}</div><div></br>${japaneseList[item].english}</div></div>`);
+      arrayOfCards.push(`<div class="cards col-md-2 cards-lower" data-nihongo="${japaneseList[item].id}">
+      <div>${japaneseList[item].hiragana}</div><div></br>${japaneseList[item].english}</div></div>`);
     })
   
     shuffleArray(arrayOfCards).map(el => divs += el );
@@ -120,7 +120,7 @@ function faceDownCards(allCards){
   
   function congratulationsDiv(){
     return `<div class="congratulations">
-      <h1>Thank you for playing this mini game!</h1>
+      <h1>Thank you for playing this mini game! &#127881;</h1>
       <p>If you want to play again, press reset button above.
     `;
   }
