@@ -5,7 +5,7 @@ body, html {
     align-items: center;
     justify-content: center;
     font-family: 'Kosugi Maru', sans-serif;
-    font-size:16px;
+    font-size: 1.2rem;
 }
   
 .game-container{
@@ -23,31 +23,29 @@ body>div{
     border: 10px;
     height:50px;
     display: flex;
-    border: 2px solid black;
-    border-radius: 5px;
+    border: 1px solid rgb(32, 32, 32);
+    border-radius: 4px;
     padding: 10px;
-    box-shadow: 5px 10px;
+    
 }
 
 
 .game-status{
-    padding:25px;
+    padding: 20px 20px 20px 0px;
 }
 
 .game-status :first-child{
     text-align: center;
     align-items: center;
-
     cursor: pointer; 
-    border: 2px solid black;
+    border: 1px solid rgb(32, 32, 32);
     border-radius: 5px;
-    box-shadow: 5px 10px;
     padding: 5px 5px 5px 5px;
     transition:box-shadow 0.2s ease, transform 0.2s ease;
 }
 
 .game-status :first-child:hover{
-    box-shadow: 0 0 0 0, inset 4px 4px 4px 0px;
+    box-shadow: 1px 1px 1px 1px;
     transform:translate(6px,6px)
 }
 
@@ -59,9 +57,8 @@ body>div{
     height:650px;
     width:800px;
     padding: 10px;
-    border: 2px solid black;
+    border: 1px solid rgb(32, 32, 32);
     border-radius: 5px;
-    box-shadow: 5px 10px;
 }
 
 .none{
@@ -71,7 +68,7 @@ body>div{
 .cards{
     width: 150px;
     height: 150px;
-    border: 2px solid black;
+    border: 1px solid rgb(32, 32, 32);
     border-radius: 5px;
     margin: 3px 3px 3px 3px;
     align-content: center;
@@ -105,13 +102,13 @@ body>div{
 }
 
 .flip{
-    background-color:white;
+    background-color:rgb(206, 164, 129);
     backface-visibility: hidden;
 
 }
 
 .cards-lower{
-    background-color:black;
+    background-color:rgb(0, 0, 0);
     backface-visibility: hidden;
     -webkit-touch-callout: none; 
     -webkit-user-select: none; 

@@ -1,4 +1,4 @@
-function returnNihongoList(){
+function returnJapaneseList(){
     return Object.values([
         {
             "id": "0",
