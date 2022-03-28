@@ -8,6 +8,21 @@
     <title>Japanese Number Memory Game</title>
 </head>
 <body>
+    <section  class="game-container">
+        <div class="border game-status" id="startButton">
+            <span class="start">スタート</span>
+        </div>
+
+        <div class="border game-panel" id="gamePanel">
+        </div>
+
+        <div class="border game-description blocked none" id="gameDescriptionPanel">
+            <div>
+              <ruby>当<rb><rt>あたった</ruby>たった<ruby>回数<rb><rt>かいすう</ruby>: <span id="scored">0</span><br>
+              <ruby>間違<rb><rt>まちが</ruby>えた<ruby>回数<rb><rt>かいすう</ruby>: <span id="mistaken">0</span>
+            </div>
+        </div>
+</section >
 
     <script type="text/javascript" src="js/japanese.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
